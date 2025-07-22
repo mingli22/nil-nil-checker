@@ -1,0 +1,29 @@
+{
+  "name": "Premier League Spoiler-Free Scores",
+  "short_name": "PL Spoiler-Free",
+  "description": "Check Premier League matches for goalless draws without spoilers",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F5F5F5",
+  "theme_color": "#1B5E20",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "categories": ["sports", "entertainment"],
+  "lang": "en"
+}
