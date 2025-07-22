@@ -1,15 +1,18 @@
 {
   "version": 2,
-  "buildCommand": "vite build --config vite.config.vercel.ts",
-  "outputDirectory": "dist",
+  "framework": "vite",
+  "buildCommand": "cd client && npm install && vite build",
+  "outputDirectory": "client/dist",
+  "installCommand": "npm install",
+  "functions": {
+    "api/matches.js": {
+      "runtime": "@vercel/node"
+    }
+  },
   "routes": [
     {
-      "src": "/api/(.*)",
-      "dest": "/api/index.js"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/index.html"
+      "src": "/api/matches/(.*)",
+      "dest": "/api/matches.js"
     }
   ]
 }
