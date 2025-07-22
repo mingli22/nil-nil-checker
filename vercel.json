@@ -1,18 +1,7 @@
 {
   "version": 2,
   "framework": "vite",
-  "buildCommand": "cd client && npm install && vite build",
+  "buildCommand": "cd client && vite build",
   "outputDirectory": "client/dist",
-  "installCommand": "npm install",
-  "functions": {
-    "api/matches.js": {
-      "runtime": "@vercel/node"
-    }
-  },
-  "routes": [
-    {
-      "src": "/api/matches/(.*)",
-      "dest": "/api/matches.js"
-    }
-  ]
+  "installCommand": "npm install"
 }
