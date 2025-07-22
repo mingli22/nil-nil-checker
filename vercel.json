@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "buildCommand": "vite build",
-  "outputDirectory": "dist/public",
+  "buildCommand": "vite build --config vite.config.vercel.ts",
+  "outputDirectory": "dist",
   "routes": [
     {
       "src": "/api/(.*)",
